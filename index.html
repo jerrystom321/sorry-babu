@@ -1,0 +1,31 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry, Nushu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heart" onclick="showHeartMessage()">❤️</div>
+        <h1>I'm Sorry, Nushu!</h1>
+        <p>Nushu, I never meant to hurt you. Please forgive me.</p>
+        <p>You are very special to me. Let’s be happy again! 💖</p>
+        <button class="button" onclick="showForgiveMessage()">Forgive Me?</button>
+    </div>
+
+    <script>
+        function showHeartMessage() {
+            alert("Nushu, you are always in my heart! ❤️");
+        }
+
+        function showForgiveMessage() {
+            let button = document.querySelector(".button");
+            button.innerText = "Thank You, Nushu! 😊";
+            button.style.background = "#4CAF50";
+            alert("Yay! Let's be happy again! 🤗💕");
+        }
+    </script>
+</body>
+</html>
